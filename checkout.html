@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout">
+            <div class="retornocarro">
+                <a href="index.html">seguir comprando</a>
+                <h1>Lista de productos</h1>
+                <div class="lista">
+    
+                    <div class="item">
+                        <img src="img/producto1.jpg">
+                        <div class="info">
+                            <div class="nombre">Laptop HP Gaming neo3</div>
+                            <div class="precio">S/3600 - 1 producto</div>
+                        </div>
+                        <div class="cantidad">1</div>
+                        <div class="retornoprecio">S/3600</div>
+                    </div>
+    
+                </div>
+            </div>
+    
+    
+            <div class="confirmacion">
+                <h1>Checkout</h1>
+    
+                <div class="INFO">
+                    <div class="informacion">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+        
+                    <div class="informacion">
+                        <label for="telefono">numero de telefono</label>
+                        <input type="text" name="telefono" id="telefono">
+                    </div>
+        
+                    <div class="informacion">
+                        <label for="direccion">Direccion</label>
+                        <input type="text" name="direccion" id="direccion">
+                    </div>
+        
+                    <div class="informacion">
+                        <label for="pais">Pais</label>
+                        <select name="pais" id="pais">
+                            <option value="">ELEGIR</option>
+                            <option value="">Perú</option>
+                        </select>
+                    </div>
+        
+                    <div class="informacion">
+                        <label for="ciudad">Ciudad</label>
+                        <select name="ciudad" id="ciudad">
+                            <option value="">ELEGIR</option>
+                            <option value="">Lima</option>
+                            <option value="">Arequipa</option>
+                            <option value="">Trujillo</option>
+                            <option value="">Cusco</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="retorno">
+                    <div class="total">
+                        <div>Cantidad Total</div>
+                        <div class="cantidadtotal">1</div>
+                    </div>
+                    <div class="retorno">
+                        <div>Precio Total</div>
+                        <div class="preciototal">S/3600</div>
+                    </div>
+                </div>
+                <button class="CONFIRMACION">CHECKOUT</button>
+                </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+<script>
+    let correo = prompt("Correo electronico");
+    alert("Se te estara enviando la informacion sobre el producto en cuestion a " + correo + ". Espero que hayas tenido una agradable experiencia.");
+    document.write("<h1> Confirmación de compra </h1>");
+ 
+</script>
